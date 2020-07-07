@@ -1,0 +1,80 @@
+.main-wrapper {
+  padding: 80px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .card-container {
+    box-shadow: 0 3px 8px 0 rgba(37, 46, 113, 0.12);
+    padding: 20px;
+    min-height: 300px;
+    width: 450px;
+    margin-bottom: 20px;
+    .icon-box {
+      font-size: 2rem;
+    }
+  }
+  .options {
+    box-shadow: 0 3px 8px 0 rgba(37, 46, 113, 0.12);
+    height: 50px;
+    width: 450px;
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+      height: 100%;
+      .ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+        height: 100%;
+      }
+    }
+    .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+      line-height: 50px;
+    }
+    .ant-select-single .ant-select-selector .ant-select-selection-item {
+      line-height: 50px;
+    }
+    .ant-select-arrow {
+      cursor: pointer;
+    }
+    .ant-select-show-search.ant-select-single:not(.ant-select-customize-input) .ant-select-selector input {
+      height: 100%;
+    }
+  }
+}
+
+.card-wrapper {
+  & > div {
+    display: flex;
+    .content {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      h1 {
+        margin-bottom: 0;
+        margin-right: 5px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.box {
+  border-radius: 4px;
+  box-shadow: 0 3px 8px 0 rgba(37, 46, 113, 0.12);
+  position: relative;
+  .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+  }
+}
